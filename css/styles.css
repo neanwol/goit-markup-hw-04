@@ -540,6 +540,10 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-bottom: 16px;
 }
 
+.text {
+margin-bottom: 16px;
+}
+
 .footer-media {
     max-width: 1158px;
     width: 100%;
