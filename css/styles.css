@@ -204,7 +204,6 @@ padding-bottom: 120px;
     letter-spacing: 0.02em;
     font-weight: 500;
     margin-bottom: 16px;
-
 }
 
 .logo {
@@ -469,14 +468,9 @@ img {
     justify-content: center;
     margin-top: 8px;
     height: 40px;
-    width: 40px;
+    max-width: 40px;
 }
 
-
-.team-soc {
-    width: 40px;
-    height: 40px;
-}
 
 .social {
     width: 40px;
@@ -556,8 +550,8 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    padding: 0 15px;
 }
 
-.container, .footer-media {
-    display: block;
+.container {
+    display: flex;
 }
 
 .container-img {
@@ -600,5 +594,17 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .footer-ul {
     display: flex;
     gap: 16px;
+}
 
+.address-li {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-li {
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text {
+    color: #FFFFFF;
+    margin-bottom: 16px;
 }
