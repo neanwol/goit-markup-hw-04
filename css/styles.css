@@ -10,12 +10,17 @@ body {
 .header {
     background-color: #FFFFFF;
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);;
 }
 
 .title {
     background-color: #2E2F42;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     color: #FFFFFF;
     text-align: center;
     max-width: 1440px;
@@ -89,6 +94,7 @@ body {
     margin-right: auto;
     margin-left: auto;
     padding: 16px 32px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .team {
@@ -161,6 +167,7 @@ padding-bottom: 120px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     position: relative;
     overflow: hidden;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-item:hover .container-img {
@@ -190,11 +197,14 @@ padding-bottom: 120px;
 }
 
 .text {
-    color: #F4F4FD;
+    color: #FFFFFF;
     max-width: 264px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    font-weight: 500;
+    margin-bottom: 16px;
+
 }
 
 .logo {
@@ -329,6 +339,9 @@ list-style: none;
     letter-spacing: 0.02em;
     color: #2e2f42;
     padding: 24px 0;
+    position: relative;
+    color: #404BBF;
+    transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-one::after {
@@ -337,6 +350,11 @@ list-style: none;
     border-radius: 2px;
     width: 48px;
     height: 4px;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background-color: #404bbf;
+
 }
 
 
@@ -369,6 +387,11 @@ address {
     font-style: normal;
 }
 
+.link {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
 .link:hover,
 .link:focus {
     color: #404BBF;
@@ -391,6 +414,12 @@ ul {
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
+    display: flex;
+    align-items: baseline;
+}
+
+.logo-p {
+margin-right: 120px;
 }
 
 .visually-hidden {
@@ -449,10 +478,6 @@ display: inline-flex;
 }
 
 .social {
-    display: inline-flex;
-    gap: 24px;
-    justify-content: center;
-    margin-top: 8px;
     width: 40px;
     height: 40px;
 }
@@ -503,7 +528,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-left: auto;
     margin-right: auto;
     width: calc((100% - 72px) / 4);
-    border: 1px solid ;
     border-radius: 4px;
     height: 112px;
     background-color: #f4f4fd;
@@ -511,6 +535,8 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     gap: 24px;
     justify-content: center;
+    border: 1px solid #8e8f99;
+    margin-bottom: 8px;
 }
 
 .soc {
@@ -562,4 +588,16 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
         0px 1px 1px 0px rgba(46, 47, 66, 0.16),
         0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px
+}
+
+.footer-ul {
+    display: flex;
+    gap: 16px;
+
 }
